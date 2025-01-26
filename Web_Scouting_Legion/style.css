@@ -1,0 +1,36 @@
+/* Mengatur gaya untuk elemen h1 */
+h1 {
+    color: #ffffff !important;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+}
+    
+.container {
+        margin: 0 auto; /* Menempatkan container di tengah secara horizontal */
+        width: 72%; /* atau sesuaikan lebar */
+        line-height: 1.5; /* menambah jarak antar baris */
+        display: flex;
+        justify-content: center; /* Tengah secara horizontal */
+        align-items: center; /* Tengah secara vertikal */
+        text-align: justify;
+        border-color: aliceblue;
+        border-style: solid;
+        border-width: 1px;
+
+    }
+    
+    p {
+        color: #ffffff !important;
+        font-family: monospace;
+        font-size: 15px;
+    }
+
+body{
+background-color: black;
+}
+
+img{
+display: flex;
+justify-content: center; 
+}
