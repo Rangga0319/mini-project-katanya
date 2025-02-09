@@ -1,0 +1,30 @@
+Berikut adalah list Handphone Samy,
+
+a. Processor: "Ex 2100"
+
+   Type: "S21 Ultra"
+  Variant: RAM: 12,Internal: 256 dan RAM: 16, Internal:512
+  Tahun: 2021
+
+b. Processor: "SD 8 Gen 1"
+  Type: "S22 Ultra"
+  Variant:RAM: "12", Internal:"256" dan RAM: "12",Internal:"512"
+  Tahun: 2022
+
+c. Processor: "SD 8 Gen 2 for Galaxy"
+  Type: "S23 plus"
+  Variant:RAM: "8", Internal:"256" dan RAM: "8",Internal:"512"
+  Tahun: 2023
+
+d. Processor: "SD 8 Gen 2 for Galaxy"
+    Type: "S23 Ultra"
+    Variant:RAM: "12", Internal:"256" dan RAM: "12",Internal:"512"
+    Tahun: 2023
+
+Jika  data diatas disimpan dalam sebuah variabel, bernama handPhone, 
+maka buatlah method bernama getProcessorWithRAM8 untuk mengambil list procesor 
+yang memiliki variant RAM 8 kemudian me return list nya.
+
+HASIL YANG DI INGINKAN : 
+
+List Processor dengan RAM 8: [ 'SD 8 Gen 2 for Galaxy', 'SD 8 Gen 2 for Galaxy' ]
