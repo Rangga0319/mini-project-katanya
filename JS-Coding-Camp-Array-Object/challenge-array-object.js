@@ -1,4 +1,5 @@
 const handPhone = {
+    // Objek yang berisi data berbagai handphone dengan spesifikasinya
     a: {
       Processor: "Ex 2100",
       Type: "S21 Ultra",
@@ -14,7 +15,7 @@ const handPhone = {
     c: {
       Processor: "SD 8 Gen 2 for Galaxy",
       Type: "S23 plus",
-      Variant: { RAM: 8, Internal: 256 },
+      Variant: { RAM: 8, Internal: 256 }, // RAM = 8GB
       Tahun: 2023
     },
     d: {
@@ -23,43 +24,41 @@ const handPhone = {
       Variant: { RAM: 12, Internal: 256 },
       Tahun: 2023
     },
-    // Tambahkan data handphone baru dengan RAM 8
     e: {
       Processor: "SD 8 Gen 2 for Galaxy",
       Type: "S23 Lite",
-      Variant: { RAM: 8, Internal: 128 },
+      Variant: { RAM: 8, Internal: 128 }, // RAM = 8GB
       Tahun: 2023
     }
-  };
-  
-  function getProcessorWithRAM8(handPhone) {
+};
+
+function getProcessorWithRAM8(handPhone) {
     const processors = []; 
-    // Array untuk menyimpan processor dengan RAM 8
-    
+    // Array kosong untuk menyimpan processor yang memiliki RAM 8GB
+
     for (const key in handPhone) { 
-      // Iterasi melalui properti objek handPhone
-    
-      if (handPhone.hasOwnProperty(key)) { 
-        // Pastikan properti dimiliki oleh objek
-    
-        const phone = handPhone[key]; 
-        // Ambil data handphone dari properti
-    
-        if (phone.Variant.RAM === 8) { 
-          // Periksa apakah RAM handphone adalah 8
-    
-          processors.push(phone.Processor); 
-          // Tambahkan processor ke array
-    
+        // Cek setiap handphone satu per satu
+        
+        if (handPhone.hasOwnProperty(key)) { 
+            // Memastikan properti benar-benar milik objek
+        
+            const phone = handPhone[key]; 
+            // Mengambil data handphone berdasarkan key
+
+            if (phone.Variant.RAM === 8) { 
+                // Periksa apakah RAM handphone adalah 8GB
+                
+                processors.push(phone.Processor); 
+                // Jika iya, tambahkan processor ke dalam array
+            }
         }
-      }
     }
     return processors; 
-    // Kembalikan array berisi processor dengan RAM 8
-  }
-  
-  const processorsWithRAM8 = getProcessorWithRAM8(handPhone); 
-  // Panggil fungsi
-  
-  console.log("List Processor dengan RAM 8:", processorsWithRAM8); 
-  // Tampilkan hasil
+    // Mengembalikan daftar processor dengan RAM 8GB
+}
+
+const processorsWithRAM8 = getProcessorWithRAM8(handPhone); 
+// Memanggil fungsi dan menyimpan hasilnya ke dalam variabel
+
+console.log("List Processor dengan RAM 8:", processorsWithRAM8); 
+// Menampilkan hasil di console
